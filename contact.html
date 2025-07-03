@@ -6,29 +6,39 @@
   <style>
     body {
       font-family: 'Kanit', sans-serif;
-      background: #e9fbe5;
+      background: #e8f5e9;
       padding: 20px;
     }
 
     h1 {
       text-align: center;
-      color: #388e3c;
+      color: #2e7d32;
+      font-size: 36px;
       margin-bottom: 40px;
     }
 
     .member-card {
       background: #ffffff;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(56, 142, 60, 0.2);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
       padding: 25px;
       margin: 20px auto;
-      max-width: 400px;
-      border-left: 10px solid #81c784;
+      max-width: 420px;
+      border-left: 12px solid #a5d6a7;
       transition: transform 0.3s;
+      position: relative;
     }
 
     .member-card:hover {
-      transform: translateY(-5px);
+      transform: scale(1.02);
+    }
+
+    .member-card::before {
+      content: "🌿";
+      font-size: 28px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
 
     .member-card img {
@@ -38,14 +48,15 @@
       object-fit: cover;
       display: block;
       margin: 0 auto 15px;
-      border: 4px solid #a5d6a7;
+      border: 4px solid #c8e6c9;
       background-color: #f1fff3;
     }
 
     .member-card h3 {
       text-align: center;
-      margin-top: 0;
+      margin: 10px 0 5px;
       color: #2e7d32;
+      font-size: 22px;
     }
 
     .member-card p {
@@ -54,37 +65,41 @@
       color: #4e944f;
       font-size: 15px;
     }
+
+    .member-card p span {
+      margin-right: 6px;
+    }
   </style>
 
-  <!-- โหลดฟอนต์น่ารักจาก Google Fonts (Kanit ภาษาไทย) -->
+  <!-- ฟอนต์ Google ภาษาไทย -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1>ประวัติสมาชิก</h1>
+  <h1>🌱 ประวัติสมาชิก 🌱</h1>
 
   <div class="member-card">
     <img src="B.jpg" alt="รูปสมาชิก">
-    <h3>นายธนวัฒน์ มาแสนจันทร์</h3>
-    <p>ตำแหน่ง: บอส</p>
-    <p>อีเมล: benzza888@example.com</p>
-    <p>โทร: 081-234-5678</p>
+    <h3>👨‍💼 นายธนวัฒน์ มาแสนจันทร์</h3>
+    <p><span>📌</span>ตำแหน่ง: บอส</p>
+    <p><span>📧</span>benzza888@example.com</p>
+    <p><span>📞</span>081-234-5678</p>
   </div>
 
   <div class="member-card">
     <img src="P.jpg" alt="รูปสมาชิก">
-    <h3>นายณัฐดนัย วรรณชัย</h3>
-    <p>ตำแหน่ง: ลูกน้อง1</p>
-    <p>อีเมล: pluemza999@example.com</p>
-    <p>โทร: 089-876-5432</p>
+    <h3>👨‍💻 นายณัฐดนัย วรรณชัย</h3>
+    <p><span>📌</span>ตำแหน่ง: ลูกน้อง1</p>
+    <p><span>📧</span>pluemza999@example.com</p>
+    <p><span>📞</span>089-876-5432</p>
   </div>
 
   <div class="member-card">
     <img src="M1.jpg" alt="รูปสมาชิก">
-    <h3>นางศิลป์ณวาริน ทีจันทา</h3>
-    <p>ตำแหน่ง: ลูกน้อง2</p>
-    <p>อีเมล: muayza777@example.com</p>
-    <p>โทร: 089-876-5432</p>
+    <h3>👩‍💼 นางสาวศิลป์ณวาริน ทีจันทา</h3>
+    <p><span>📌</span>ตำแหน่ง: ลูกน้อง2</p>
+    <p><span>📧</span>muayza777@example.com</p>
+    <p><span>📞</span>089-876-5432</p>
   </div>
 
 </body>
